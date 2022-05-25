@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    width: 100%;
+    letter-spacing: 1.3px;;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+main footer{
+    margin: 20px;
+}
