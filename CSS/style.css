@@ -1,13 +1,30 @@
-body {
-    font-family: sans-serif;
-    background-color: antiquewhite;
-    width: 100%;
-    letter-spacing: 1.3px;;
+body{
+    font-family: monospace;
 }
-nav a{
-    display: inline-block;
-    text-decoration: none;
+/* adjacent selector */
+main+p{
+ background-color: orange;
+ ;
 }
-main footer{
-    margin: 20px;
+/* descendant selector */
+article p{
+    color: grey;
+    font-weight: bold;
 }
+/* child selector */
+header > h1{
+    letter-spacing: 2px;
+}
+ footer a:link{
+     color: blue;
+ }
+ footer a:visited{
+     color:purple;
+ }
+ footer a:hover{
+     color:dimgray;
+     font-size: 20px;
+ }
+ footer a:active{
+     color:lightcoral;
+ }
