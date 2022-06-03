@@ -12,7 +12,7 @@ header {
 header nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: end;
+    justify-items: start;
     
 }
 header nav a{
@@ -31,6 +31,7 @@ header div img{
 body{
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
+    background-color: cornsilk;
 }
 img{
     height: 300px;
@@ -45,4 +46,7 @@ justify-items: center;
 width: 90vw;
 margin: 0 auto;
 background-color: cornsilk;
+}
+article p{
+    font-style: italic;
 }
