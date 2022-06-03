@@ -11,6 +11,10 @@ article p{
     color: grey;
     font-weight: bold;
 }
+article p::first-line{
+    color:orange;
+    font-size: 14px;
+}
 /* child selector */
 header > h1{
     letter-spacing: 2px;
@@ -27,4 +31,7 @@ header > h1{
  }
  footer a:active{
      color:lightcoral;
+ }
+ footer section{
+     font-size: 14px;
  }
