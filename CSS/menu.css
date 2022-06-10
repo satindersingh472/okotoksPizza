@@ -1,3 +1,18 @@
+@keyframes blurAnimation{
+    25% {
+        filter: blur(15px);
+    }
+    50%{
+        filter:blur(10px);
+    }
+    75%{
+        filter: blur(5px);
+    }
+    100%{
+        filter:blur(0px);
+    }
+
+}
 @font-face {
     font-family: customized;
     src: url("../Parisienne/Parisienne-Regular.ttf") format("ttf");
@@ -8,13 +23,16 @@ body {
     font-family: monospace;
     font-size: 16px;
     margin: 0 auto;
-    width: 350px;
+    width: 100%;
 }
 
 img {
     height: 250px;
     width: 250px;
     object-fit: cover;
+    margin: auto;
+    filter: blur(0px);
+    animation: blurAnimation 4s ease-in-out ;
 }
 
 header {
@@ -39,8 +57,13 @@ header {
     margin: 4px;
     color:white;
     box-sizing: border-box;
+    transition: all .33s ease-out;
 }
-
+.nav a:hover{
+    padding: 15px;
+    background-color: red;
+    z-index: 2;
+}
 #logo img {
     height: 40px;
     width: 100%;
@@ -68,6 +91,7 @@ article {
     justify-items: center;
     width: 100%;
     box-sizing: border-box;
+
 }
 
 #mainCourse {
@@ -115,11 +139,13 @@ a:link {
     color: black;
     font-weight: bold;
 }
-
+h3{
+    transition: font-size .6s ease-in-out;
+}
+h3:hover{
+font-size: 25px;
+}
 @media only screen and (min-width:600px) {
-    body {
-        width: 600px;
-    }
 
     #appetizer {
         display: grid;
@@ -162,10 +188,7 @@ a:link {
 
 /* media query for desktop */
 @media only screen and (min-width:1000px) {
-    body {
-        width: 100%;
-        margin: 0 auto;
-    }
+
 
     header {
         display: grid;
