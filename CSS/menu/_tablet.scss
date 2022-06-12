@@ -1,0 +1,40 @@
+@media only screen and (min-width:600px) {
+
+    #appetizer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    #mainCourse {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+
+    }
+
+    #sides {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+
+    }
+
+    main {
+        background-image: url("../images/textures.jpg");
+        margin: 0 auto;
+        background-size: cover;
+    }
+}

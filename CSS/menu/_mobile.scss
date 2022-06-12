@@ -1,0 +1,161 @@
+//variables for colors for every query//
+$back-color: red;
+$visible-color: black;
+$hover-color: yellow;
+
+@keyframes blurAnimation {
+    25% {
+        filter: blur(15px);
+    }
+
+    50% {
+        filter: blur(10px);
+    }
+
+    75% {
+        filter: blur(5px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+
+}
+
+@font-face {
+    font-family: customized;
+    src: url("../Parisienne/Parisienne-Regular.ttf") format("ttf");
+    font-weight: regular;
+}
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin: auto;
+    filter: blur(0px);
+    animation: blurAnimation 4s ease-in-out;
+}
+
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav {
+    text-align: center;
+    display: grid;
+    font-size: 1.6rem;
+
+    width: 100%;
+    a {
+        text-decoration: none;
+        background-color: $back-color;
+        margin: 4px;
+        color: white;
+        box-sizing: border-box;
+        transition: all .33s ease-out;
+
+        &:hover {
+            padding: 20px;
+            background-color: $hover-color;
+            z-index: 2;
+            color: $visible-color;
+        }
+    } 
+}
+
+#logo img {
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+    border-bottom: 1px solid gray;
+
+}
+
+article {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    div{
+        justify-self: center;
+    }
+}
+
+#appetizers {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#mainCourse {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sides {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: grey;
+
+    #footer_second{
+        display: grid;
+    grid-template-rows: 1fr;
+    text-align: center;
+    }
+}
+#footer_second a {
+    text-decoration: none;
+    margin: 5px;
+    &:link{
+        color: $visible-color;
+    font-weight: bold;
+    }
+    &:hover{
+        color: white;
+        font-size: 20px;
+    }
+}
+h3 {
+    transition: font-size .6s ease-in-out;
+
+    &:hover {
+        font-size: 25px;
+    }
+}
